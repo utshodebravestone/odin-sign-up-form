@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Odin Sign up form</title>
+  </head>
+  <body>
+    <main>
+      <div class="left">
+        <div class="left-over">
+          <img
+            class="left-over-img"
+            src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+            alt="Odin Logo"
+          />
+          <p class="left-over-txt">Odin</p>
+        </div>
+        <img
+          class="left-down"
+          src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
+          alt="Image of a green tree"
+        />
+      </div>
+
+      <div class="right">
+        <div class="titles">
+          <h1 class="right-title">
+            This is not a real online service. You know you need something like
+            this in your life to help you realize your deepest dreams. Sing up
+            <em>now</em> to get started.
+          </h1>
+          <h1 class="right-title">You <em>know</em> you want to.</h1>
+        </div>
+
+        <form class="form-card" id="sign-up-form">
+          <div class="input-card">
+            <h1 class="form-title">Let's do this!</h1>
+            <div class="input-group">
+              <div class="input">
+                <label class="input-label" for="first-name">First Name</label>
+                <input
+                  required
+                  minlength="3"
+                  class="input-field"
+                  type="text"
+                  id="first-name"
+                />
+              </div>
+              <div class="input">
+                <label class="input-label" for="last-name">Last Name</label>
+                <input
+                  required
+                  minlength="3"
+                  class="input-field"
+                  type="text"
+                  id="last-name"
+                />
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="input">
+                <label class="input-label" for="email">Email</label>
+                <input
+                  required
+                  minlength="10"
+                  class="input-field"
+                  type="email"
+                  id="email"
+                />
+              </div>
+              <div class="input">
+                <label class="input-label" for="number">Number</label>
+                <input
+                  required
+                  minlength="6"
+                  class="input-field"
+                  type="tel"
+                  id="number"
+                />
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="input">
+                <label class="input-label" for="password">Password</label>
+                <input
+                  required
+                  minlength="8"
+                  class="input-field"
+                  type="password"
+                  id="password"
+                />
+                <small
+                  class="validation-message"
+                  id="password-validation-message"
+                >
+                  * Passwords do not match
+                </small>
+              </div>
+              <div class="input">
+                <label class="input-label" for="confirm-password"
+                  >Confirm Password</label
+                >
+                <input
+                  required
+                  minlength="3"
+                  class="input-field"
+                  type="password"
+                  id="confirm-password"
+                />
+              </div>
+            </div>
+          </div>
+          <button class="form-submit-btn">Create Account</button>
+        </form>
+        <p class="form-alternative">
+          Already have an account?
+          <a class="form-alternative-link" href="">Log in</a>
+        </p>
+      </div>
+      <script src="./app.js"></script>
+    </main>
+  </body>
+</html>
